@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f9;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease; /* Smooth transition for box-shadow */
+}
+
+body:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow effect on hover */
+}
+
+h1 {
+    color: #333;
+}
+
+label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+}
+
+input, select, button {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1rem;
+    width: 80%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+input:focus, select:focus, button:hover {
+    border-color: #007BFF; /* Border color change on focus or hover */
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3); /* Shadow effect on hover/focus */
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #007BFF;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Fade-in transition for result */
+}
+
+#result.show {
+    opacity: 1; /* Show result with fade-in effect */
+}
